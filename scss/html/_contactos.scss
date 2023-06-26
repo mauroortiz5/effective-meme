@@ -95,7 +95,7 @@ input[type="submit"]:hover {
 }
 /* Estilos para pantallas de tamaño pequeño */
 @media (max-width: 600px) {
-.pie-pagina .grupo-1{
+.grupo-1{
   width: 90%;
   display: grid;
   grid-template-columns: repeat(1,1fr);
