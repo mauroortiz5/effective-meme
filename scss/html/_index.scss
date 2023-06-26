@@ -1,0 +1,158 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixins';
+@import '../utilidades/reset';
+
+/* Estilos específicos para el index */
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: $bg-color;
+  background-image: $bg-gradient-color;
+}
+main h1{
+  text-align: center;
+}
+main h2{
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+header nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+header nav ul li a {
+  color: $text-color;
+  text-decoration: none;
+}
+.pie-pagina{
+  width: 100%;
+  background-color: $bg-color;
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+  width: 150px;
+}
+.pie-pagina .grupo-1 .box h2{
+  
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: $text-color;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: $text-color;
+  margin-right: 10px;
+  background-color: #0d200d;
+  text-align: center;
+}
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 0px;
+  text-align: center;
+  color: $text-color;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+@media (max-width: 600px) {
+  header {
+      display: flex;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li{
+      width: 100%;
+      height: 100%;
+      font-size: 15px;}
+   main .contenedor{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        padding: 20px;
+        margin: 15px;
+        align-items: center;
+     }
+      .contenedor img{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    .pie-pagina .grupo-1{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+  }
+  @media (min-width: 601px) and (max-width: 1024px) {
+    
+    .contenedor img{
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    main .contenedor {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 15px;
+      margin: 10px;
+    }
+    footer {
+      width: 100%;
+      background-color: $bg-color;
+      padding: 20px;
+      text-align: center;
+      color: $text-color;
+    }
+    
+    
+    footer p {
+      margin-bottom: 10px;
+    }
+    
+    
+    footer a {
+      color: $link-color;
+      text-decoration: none;
+    }
+    
+  }

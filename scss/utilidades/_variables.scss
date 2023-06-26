@@ -1,3 +1,10 @@
 //paleta de colores
-$primary-color: rgb(233, 201, 159);
-$secondary-color: #ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+$bg-color: rgb(233, 201, 159);
+$bg-gradient-color: linear-gradient(to bottom right, rgb(233, 201, 159), #ffffff);
+$text-color: whitesmoke;
+$link-color: black;
+$form-bg-color: #f2f2f2;
+$button-bg-color: #4CAF50;
+$button-hover-bg-color: #45a049;

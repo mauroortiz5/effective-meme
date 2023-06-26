@@ -1,0 +1,96 @@
+@import '../utilidades/variables';
+
+
+/* Estilos específicos para la página "Sobre mí" */
+
+.main h1 {
+  text-align: center;
+}
+
+.main h2 {
+  text-align: center;
+}
+
+.p-sobremi {
+  margin: 20px;
+}
+
+.main p a-mail {
+  color: $link-color;
+}
+.pie-pagina{
+  width: 100%;
+  background-color: $bg-color;
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+  width: 150px;
+}
+.pie-pagina .grupo-1 .box h2{
+  
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: $text-color;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: $text-color;
+  margin-right: 10px;
+  background-color: #0d200d;
+  text-align: center;
+}
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 0px;
+  text-align: center;
+  color: $text-color;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  main .p-sobremi{
+    margin-bottom: 100px;
+}
+
+  footer {
+    width: 100%;
+    background-color: $bg-color;
+    padding: 20px;
+    text-align: center;
+    color: $text-color;
+  }
+  
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  
+  footer a {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
